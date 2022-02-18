@@ -1,0 +1,90 @@
+.home-box {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.box-wrap {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-wrap li {
+    padding: 0 20px;
+}
+.home-box input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.home-box span {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #603aa1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.home-box span svg {
+    width: 80px;
+    height: 80px;
+    fill:#603aa1;
+    transition: all 0.5s;
+}
+
+.property-box.home-box h6 {
+    background: #603aa1;
+    border: 2px solid #603aa1;
+    border-radius: 5px;
+    bottom: -1.5rem;
+    color: #fff;
+    left: 15%;
+    padding: 4px 0.4rem;
+    position: absolute;
+    left: 50%;
+    width: 75%;
+    font-size: 0.9rem;
+    margin: 0;
+    border: 2px solid #fff0; 
+    transform: translateX(-50%);
+    bottom: -22px;
+    transition: all 0.5s;
+}
+.home-box:hover{
+    transform: scale(1.28);
+}
+.home-box:hover span {
+    border-radius: 10px;
+}
+
+.home-box:hover span svg {
+    transform: scale(1.2);
+}
+.home-box input:checked + div span{
+    background-color: #603aa1;
+}
+.home-box input:checked + div span svg{
+    fill: #fff;
+}
+.home-box input:checked + div h6{
+    background: #2e1166;
+    border: 2px solid #fff; 
+}
+.star-box span {
+    flex-wrap: wrap !important;
+}
+
+.star-box span svg {
+    width: 25px !important;
+    padding: 2px !important;
+}
